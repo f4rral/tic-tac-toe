@@ -1,0 +1,54 @@
+.square {
+  box-sizing: border-box;
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  
+  font-family: inherit;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 0;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: transparent;
+  border: none;
+
+  transition: color 0.25s linear;
+}
+
+.square:not(:first-child) {
+  border-left: 3px solid #009aff;
+}
+
+.square:hover {
+  cursor: pointer;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.square--win {
+  color: #70b46e;
+}
+
+.square__value {
+  display: block;
+  animation: animated-uprise 0.2s;
+}
+
+@keyframes animated-uprise {
+  0% {
+    transform: scale(0);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,7 @@
+.board__row {
+  display: flex;
+}
+
+.board__row:not(:last-child) {
+  border-bottom: 3px solid #009aff;
+}

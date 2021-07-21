@@ -1,0 +1,33 @@
+.counters {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 260px;
+
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.counters-colum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  flex-basis: 0;
+  box-sizing: border-box;
+}
+
+.counters-title {
+  width: 100%;
+  padding-bottom: 2px;
+
+  font-weight: 700;
+  text-align: center;
+
+  border-bottom: 3px solid #009aff;
+}
+
+.counters-value {
+  padding-top: 8px;
+  padding-bottom: 2px;
+}
